@@ -13,3 +13,18 @@ header {
 /* ------------------------------------
 			Index
 ------------------------------------ */
+/* ------------------------------------
+			nosotros
+------------------------------------ */
+.wallpapered {
+  margin: 0;
+  padding-top: 250px;
+  width: 100%;
+  background: #eee center top;
+}
+.titulo {
+  font-size: 120px;
+  color: #4691ce;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
