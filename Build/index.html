@@ -12,13 +12,37 @@
 		
 		<link rel='stylesheet' href='css/bootstrap.css'>
 <link rel='stylesheet' href='css/main.css'>
+		<link href='http://fonts.googleapis.com/css?family=Signika:400,300,700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">Tu navegador es <strong>anticuado.</strong> Por favor <a href="http://browsehappy.com/">actualizalo.</a> para tener una mejor experiencia del sitio.</p>
         <![endif]-->
-				<header>
+				
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<header>
 			<div class="container">
 				<div class="row">
 					<div id="logo" class="col-md-3">
@@ -34,8 +58,8 @@
 						  <li><a href="#">Contacto</a></li>
 						</ul>
 					</div>
-				</div>
-			</div>
+				</div><!-- /.row -->
+			</div><!-- /.container -->
 		</header>
 
 		
