@@ -51,7 +51,7 @@
 					<div id="menu" class="col-md-9">
 						<ul class="nav nav-pills  pull-right">
 						  <li class="current active"><a class='current' href="index.html">Inicio</a></li>
-						  <li><a href="#">Nosotros</a></li>
+						  <li><a href="nostros.html">Nosotros</a></li>
 						  <li><a href="#">Servicios</a></li>
 						  <li><a href="#">Galer&iacute;a</a></li>
 						  <li><a href="#">Clientes</a></li>
@@ -66,7 +66,73 @@
 		
 		
 		
-		
+				
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<footer>
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div id="logo" class="col-md-3 col-md-offset-1">
+							<img src="img/logofooter.png" alt="ABG Techos y Aislantes" />
+						</div>
+						<div id="menu" class="col-md-1 col-md-offset-1">
+							<ul class="menuFooter">
+							  <li class="current active"><a class='current' href="index.html">Inicio</a></li>
+							  <li><a href="nosotros.html">Nosotros</a></li>
+							  <li><a href="#">Clientes</a></li>
+							  <li><a href="#">Contacto</a></li>
+							</ul>
+						</div>
+						<div id="menu" class="col-md-1 col-md-offset-1">
+							<ul class="menuFooter">
+							  <li class="current active"><a class='current' href="index.html">Servicio</a></li>
+							  <li><a href="nosotros.html">Servicio</a></li>
+							  <li><a href="#">Servicio</a></li>
+							  <li><a href="#">Servicio</a></li>
+							</ul>
+						</div>
+						<div id="menu" class="col-md-1 col-md-offset-1">
+							<ul class="menuFooter">
+							  <li class="current active"><a class='current' href="index.html">Galería</a></li>
+							  <li><a href="nosotros.html">Galería</a></li>
+							  <li><a href="#">Galería</a></li>
+							  <li><a href="#">Galería</a></li>
+							</ul>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+				<div class="derechos">
+				<div class="container">
+					<div class="row">
+							<div class="col-md-12">
+								<p>Todos los derechos reservados 2014</p>
+							</div>
+						</div><!-- /.row -->
+					</div><!-- /.container -->
+				</div>	
+			</div>	<!-- /.classFooter -->
+			</footer>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>

@@ -1,0 +1,28 @@
+/* Quovolver Demo Styles */
+
+/*
+ |	All required styles for the effect
+ |	are labeled with this *required*
+*/
+
+code { font-family: "Courier New", Courier, Monaco, monospace; background: #f2f2f2; margin-bottom: 20px; display: block; padding: 20px; }	
+blockquote p { margin-bottom: 10px; font-style: italic; }
+blockquote cite { font-style: normal; display: block; text-align: right; text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: 1px; font-family: Arial, Helvetica, sans-serif; }
+
+/*
+ |	Setting the width for the blockquotes is required
+ |	to accurately adjust it's contianer
+*/
+
+blockquote {
+	color: #ffffff !important;
+	font-family: Georgia, Times, serif;
+	width: 620px; /* required */
+	margin: 0 auto;
+	margin-top: 120px;
+	}
+	
+/*
+ |	The #quote_wrap div is created
+ |	by Quovolver to wrap the quotes
+*/

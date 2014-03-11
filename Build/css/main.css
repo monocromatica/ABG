@@ -10,6 +10,17 @@ header {
   padding: 25px 0;
   font-family: 'Signika', sans-serif;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Signika', sans-serif;
+  font-weight: bold;
+  color: #4691ce;
+}
+h1 {
+  font-size: 45px;
+}
 /* ------------------------------------
 			nosotros
 ------------------------------------ */
@@ -22,6 +33,48 @@ header {
 .titulo {
   font-size: 120px;
   color: #4691ce;
-  margin-top: -100px;
+  margin-top: -130px;
   margin-bottom: 50px;
+}
+/* ------------------------------------
+			quotes
+------------------------------------ */
+.quote {
+  background-image: url(../img/testimoniales.png);
+  width: 1900px;
+  height: 421px;
+  margin-top: 50px;
+}
+/* ------------------------------------
+			footer
+------------------------------------ */
+.footer {
+  background-color: #4691ce;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+.footer img {
+  margin-top: 20px;
+}
+ul.menuFooter {
+  text-decoration: none;
+}
+ul.menuFooter li {
+  list-style: none;
+}
+ul.menuFooter li a {
+  color: #ffffff;
+}
+ul.menuFooter li a:hover {
+  color: #ffffff;
+}
+.derechos {
+  background-color: #30648e;
+  width: 1900px;
+  text-align: center;
+}
+.derechos p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ffffff;
 }
