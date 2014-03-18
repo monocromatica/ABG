@@ -10,6 +10,17 @@ header {
   padding: 25px 0;
   font-family: 'Signika', sans-serif;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Signika', sans-serif;
+  font-weight: bold;
+  color: #4691ce;
+}
+h1 {
+  font-size: 45px;
+}
 /* ------------------------------------
 			Index
 ------------------------------------ */
@@ -25,6 +36,121 @@ header {
 .titulo {
   font-size: 120px;
   color: #4691ce;
-  margin-top: -100px;
+  margin-top: -130px;
   margin-bottom: 50px;
+}
+/* ------------------------------------
+			servicios
+------------------------------------ */
+#tituloservicio {
+  margin-top: 10px;
+}
+#sliderSer {
+  margin-top: 30px;
+}
+#sliderSer h1 {
+  color: #ffffff;
+}
+#servicio1 {
+  background: url(img/servicio1.png) center top no-repeat;
+  width: 1900px;
+  height: 419px;
+  padding-top: 60px;
+  margin-top: 50px;
+}
+#servicio1 p {
+  color: #ffffff;
+}
+#servicio1 h2 {
+  color: #ffffff;
+}
+#servicio2 {
+  background: url(img/servicio2.jpg) center top no-repeat;
+  width: 1900px;
+  height: 276px;
+}
+#servicio2 p {
+  color: #4691ce;
+}
+#servicio3 {
+  background: url(img/servicio3.png) center top no-repeat;
+  width: 1900px;
+  height: 419px;
+  padding-top: 60px;
+}
+#servicio3 p {
+  color: #ffffff;
+}
+#servicio3 h2 {
+  color: #ffffff;
+}
+#servicio4 {
+  background: url(img/servicio2.jpg) center top no-repeat;
+  width: 1900px;
+  height: 276px;
+}
+#servicio4 p {
+  color: #4691ce;
+}
+#servicio5 {
+  background: url(img/servicio5.png) center top no-repeat;
+  width: 1900px;
+  height: 419px;
+  padding-top: 60px;
+}
+#servicio5 p {
+  color: #ffffff;
+}
+#servicio5 h2 {
+  color: #ffffff;
+}
+#servicio6 {
+  background: url(img/servicio2.jpg) center top no-repeat;
+  width: 1900px;
+  height: 276px;
+}
+#servicio6 p {
+  color: #4691ce;
+}
+/* ------------------------------------
+			quotes
+------------------------------------ */
+.quote {
+  background-image: url(img/testimoniales.png);
+  width: 1900px;
+  height: 421px;
+  margin-top: 50px;
+}
+/* ------------------------------------
+			footer
+------------------------------------ */
+.footer {
+  background-color: #4691ce;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+.footer img {
+  margin-top: 20px;
+}
+ul.menuFooter {
+  text-decoration: none;
+}
+ul.menuFooter li {
+  list-style: none;
+}
+ul.menuFooter li a {
+  color: #ffffff;
+}
+ul.menuFooter li a:hover {
+  color: #ffffff;
+}
+.derechos {
+  background-color: #30648e;
+  width: 1900px;
+  text-align: center;
+}
+.derechos p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ffffff;
 }

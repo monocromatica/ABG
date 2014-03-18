@@ -465,6 +465,7 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  color: #9d9d9d;
 }
 .lead {
   margin-bottom: 20px;
@@ -631,8 +632,12 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #eeeeee;
 }
+
+blockquote p{
+	color: #ffffff;
+}
+
 blockquote p:last-child,
 blockquote ul:last-child,
 blockquote ol:last-child {
