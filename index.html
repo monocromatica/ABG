@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 		
-		<!-- @stylesheet bootstrap main -->
+		<!-- @stylesheet bootstrap main quovolver -->
 		<link href='http://fonts.googleapis.com/css?family=Signika:400,300,700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -19,9 +19,81 @@
             <p class="chromeframe">Tu navegador es <strong>anticuado.</strong> Por favor <a href="http://browsehappy.com/">actualizalo.</a> para tener una mejor experiencia del sitio.</p>
         <![endif]-->
 		<!-- @include _header.html -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<h2>ABG estructuras y techos</h2>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<img src="img/nosotros.jpg">
+					<h2>Empresa</h2>
+					<p>Fibosa es una empresa especializada, en la construcción e instalación de techos, aislantes y estructuras, contamos con personal capacitado y el material de la mas alta calidad, pensando siempre en la seguridad y comodidad de nuestros clientes.</p>
+					<button type="button" class="btn btn-primary">más información</button>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="img/nosotros.jpg">
+					<h2>Servicios</h2>
+					<p>Fibosa cuenta con una gran variedad de servicios, cada uno de ellos están creados especialmente para cumplir todas las necesidades que el cliente exija, ingresa a nuestra sección de servicios donde conocerás mas a fondo cada uno de nuestros servicios.</p>
+					<button type="button" class="btn btn-primary">más información</button>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="img/nosotros.jpg">
+					<h2>Galería</h2>
+					<p>Fibosa es una empresa especializada, en la construcción e instalación de techos, aislantes y estructuras, contamos con personal capacitado y el material de la mas alta calidad, pensando siempre en la seguridad y comodidad de nuestros clientes.</p>
+					<button type="button" class="btn btn-primary">más información</button>
 
+				</div>
+			</div>
+		</div>
 		
+		<div class="quote">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<blockquote>
+								<p>Ut eu consectetur nisi. Praesent facilisis diam nec sapien gravida non mattis justo imperdiet. Vestibulum nisl urna, euismod sit amet congue at, bibendum non risus.</p>
+								<cite>&ndash; Quote Author (Quote #1)</cite>
+							</blockquote>
+						</div>
+					</div>
+				</div>	
+		</div> 
 		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<h2>Lo que nos distingue</h2>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<img src="img/precio.png">
+					<h2>Precio</h2>
+					<p>Fibosa es una empresa especializada, en la construcción e instalación de techos.</p>
+				</div>
+				<div class="col-md-3 text-center">
+					<img src="img/puntualidad.png">
+					<h2>Puntualidad</h2>
+					<p>Fibosa cuenta con una gran variedad de servicios, cada uno de ellos están creados.</p>
+				</div>
+				<div class="col-md-3 text-center">
+					<img src="img/seguridad.png">
+					<h2>Seguridad</h2>
+					<p>Fibosa es una empresa especializada, en la construcción e instalación de techos.</p>
+				</div>
+				<div class="col-md-3 text-center">
+					<img src="img/calidad.png">
+					<h2>Calidad</h2>
+					<p>Fibosa es una empresa especializada, en la construcción e instalación de techos.</p>
+				</div>
+			</div>
+		</div>
+
+
 		
 		
 		<!-- @include _footer.html -->
@@ -29,7 +101,14 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 		
-		<!-- @javascrip bootstap.min main headroom.min -->
+		<!-- @javascrip bootstap.min main headroom.min quovolver -->
+		
+		<script type="text/javascript">
+			  $(document).ready(function() {
+				  $('blockquote').quovolver();
+			  });
+			
+		</script>
 		
 		<!-- @include _analytics.html -->
         
