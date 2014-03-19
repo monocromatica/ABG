@@ -14,6 +14,8 @@
 <link rel='stylesheet' href='css/main.css'>
 <link rel='stylesheet' href='css/jquery.fs.wallpaper.css'>
 <link rel='stylesheet' href='css/quovolver.css'>
+<link rel='stylesheet' href='css/custom.css'>
+<link rel='stylesheet' href='css/stapel.css'>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -54,8 +56,8 @@
 						  <li class="active"><a href="index.html">Inicio</a></li>
 						  <li><a href="nosotros.html">Nosotros</a></li>
 						  <li><a href="servicios.html">Servicios</a></li>
-						  <li><a href="galeria.html">Galer&iacute;a</a></li>
-						  <li class='current'><a class='current' href="clientes.html">Clientes</a></li>
+						  <li class='current'><a class='current' href="galeria.html">Galer&iacute;a</a></li>
+						  <li><a href="clientes.html">Clientes</a></li>
 						  <li><a href="#">Contacto</a></li>
 						</ul>
 					</div>
@@ -72,38 +74,53 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<h2>Clientes</h2>
-				</div>		
-				<div class="col-md-4 text-center">
-					<img src="img/nosotros.jpg">
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="img/nosotros.jpg">
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="img/nosotros.jpg">
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="img/nosotros.jpg">
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="img/nosotros.jpg">
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="img/nosotros.jpg">
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="img/nosotros.jpg">
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="img/nosotros.jpg">
-				</div>
-				<div class="col-md-4 text-center">
-					<img src="img/nosotros.jpg">
-				</div>
-			</div>			
+		<div class="topbar">
+						<span id="close" class="back">&larr;</span>
+						<h2>Dribbble's Talent</h2><h3 id="name"></h3>
+		</div>
+			<ul id="tp-grid" class="tp-grid">	 
+			    <li data-pile="Ray">
+			        <a href="#">
+			            <span class="tp-info">
+			                <span>Peosa</span>
+			            </span>
+			            <img src="img/galeria/1/1.jpg" />
+			        </a>
+			        
+			    </li>
+			    <li data-pile="Ray">
+			        <a href="#">
+			            <span class="tp-info">
+			                <span>Peosa</span>
+			            </span>
+			            <img src="img/galeria/1/2.jpg" />
+			        </a>
+			        
+			    </li>
+			 
+			    <li data-pile="spoiler">
+			        <a href="#">
+			            <span class="tp-info">
+			                <span>Peosa</span>
+			            </span>
+			            <img src="img/galeria/1/1.jpg" />
+			        </a>
+			    </li>
+			 
+			    <li data-pile="roy">
+			        <a href="#">
+			            <span class="tp-info">
+			                <span>Peosa</span>
+			            </span>
+			            <img src="img/galeria/1/1.jpg" />
+			        </a>
+			    </li>
+			 
+			    <!-- ... -->
+			 
+			</ul>
+			
+		
 		</div>	
 		<div class="quote">
 				<div class="container">
@@ -197,6 +214,7 @@
 <script src='js/headroom.min.js'></script>
 <script src='js/jquery.fs.wallpaper.min.js'></script>
 <script src='js/jquery.quovolver.js'></script>
+<script src='js/jquery.stapel.js'></script>
 		<script type="text/javascript">
 		    $(document).ready(function(){
 		    	$("#nosHeader").wallpaper({
@@ -210,6 +228,34 @@
 				  $('blockquote').quovolver();
 			  });
 			
+		</script>
+	
+		<script type="text/javascript">	
+			$(function() {
+
+				var $grid = $( '#tp-grid' ),
+					$name = $( '#name' ),
+					$close = $( '#close' ),
+					$loader = $( '<div class="loader"><i></i><i></i><i></i><i></i><i></i><i></i><span>Loading...</span></div>' ).insertBefore( $grid ),
+					stapel = $grid.stapel( {
+						onLoad : function() {
+							$loader.remove();
+						},
+						onBeforeOpen : function( pileName ) {
+							$name.html( pileName );
+						},
+						onAfterOpen : function( pileName ) {
+							$close.show();
+						}
+					} );
+
+				$close.on( 'click', function() {
+					$close.hide();
+					$name.empty();
+					stapel.closePile();
+				} );
+
+			} );
 		</script>
 			
 				<script>

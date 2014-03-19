@@ -10,11 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 		
-<<<<<<< HEAD
-		<!-- @stylesheet bootstrap main quovolver -->
-=======
-		<!-- @stylesheet bootstrap main nivo-slider default -->
->>>>>>> FETCH_HEAD
+		<!-- @stylesheet bootstrap main nivo-slider default main quovolver jquery.fs.wallpaper -->
+
 		<link href='http://fonts.googleapis.com/css?family=Signika:400,300,700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -22,8 +19,16 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">Tu navegador es <strong>anticuado.</strong> Por favor <a href="http://browsehappy.com/">actualizalo.</a> para tener una mejor experiencia del sitio.</p>
         <![endif]-->
-		<!-- @include _header.html -->
-<<<<<<< HEAD
+		<!-- @include _header.html --> 
+		<div id="sliderindex" class="wallpaperedi"></div>
+		
+		<div class="slider-wrapper theme-default">
+		    <div id="slider" class="nivoSlider">
+		    <img src="img/slider1.jpg">
+		    <img src="img/slider2.jpg">
+		    <img src="img/slider3.jpg">
+		    </div>
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
@@ -52,12 +57,10 @@
 
 				</div>
 			</div>
-=======
+		</div>		
 		<div class="slider-wrapper theme-default">
 		    <div id="slider" class="nivoSlider">
-		    	img
 		    </div>
->>>>>>> FETCH_HEAD
 		</div>
 		
 		<div class="quote">
@@ -72,6 +75,7 @@
 					</div>
 				</div>	
 		</div> 
+		
 		
 		<div class="container">
 			<div class="row">
@@ -112,20 +116,46 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 		
-<<<<<<< HEAD
-		<!-- @javascrip bootstap.min main headroom.min quovolver -->
+
+		<!-- @javascript bootstrap.min main headroom.min quovolver jquery.nivo.slider.pack  jquery.fs.wallpaper.min -->
+		<script type="text/javascript">
+		    $(document).ready(function(){
+		    	$("#sliderindex").wallpaper({
+				    source: "img/sliderindex.png"
+				});
+		    });
+		</script>
 		
 		<script type="text/javascript">
 			  $(document).ready(function() {
-				  $('blockquote').quovolver();
+				  $('blockquote').quovolver({
+    effect: 'fold',               // Specify sets like: 'fold,fade,sliceDown'
+    animSpeed: 500,                 // Slide transition speed
+    pauseTime: 3000,                // How long each slide will show
+    startSlide: 0,                  // Set starting Slide (0 index)
+    directionNav: true,             // Next & Prev navigation
+    controlNav: true,               // 1,2,3... navigation
+    controlNavThumbs: false,        // Use thumbnails for Control Nav
+    pauseOnHover: true,             // Stop animation while hovering
+    manualAdvance: false,           // Force manual transitions
+    prevText: 'Prev',               // Prev directionNav text
+    nextText: 'Next',               // Next directionNav text
+    randomStart: false,             // Start on a random slide
+    beforeChange: function(){},     // Triggers before a slide transition
+    afterChange: function(){},      // Triggers after a slide transition
+    slideshowEnd: function(){},     // Triggers after all slides have been shown
+    lastSlide: function(){},        // Triggers when last slide is shown
+    afterLoad: function(){}         // Triggers when slider has loaded
+});
 			  });
 			
 		</script>
-=======
-		<!-- @javascrip bootstap.min main headroom.min jquery.nivo.slider.pack -->
->>>>>>> FETCH_HEAD
-		
-		
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider();
+});
+</script>
+
 				
 		<!-- @include _analytics.html -->
     </body>
