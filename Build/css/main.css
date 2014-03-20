@@ -21,22 +21,15 @@ h4 {
 h1 {
   font-size: 45px;
 }
+.nav-pills > li.current > a,
+.nav-pills > li.current > a:hover,
+.nav-pills > li.current > a:focus {
+  color: #ffffff;
+  background-color: #4691ce;
+}
 /* ------------------------------------
 			Index
 ------------------------------------ */
-#sliderindex {
-  width: 100%;
-  height: 325px;
-  position: relative;
-  z-index: 9;
-  margin-bottom: -325px;
-}
-.wallpaperedi {
-  margin: 0;
-  padding-top: 250px;
-  width: 100%;
-  background: none;
-}
 /* ------------------------------------
 			nosotros
 ------------------------------------ */
@@ -132,8 +125,7 @@ h1 {
 			quotes
 ------------------------------------ */
 .quote {
-  background-image: url(../img/testimoniales.png);
-  width: 1900px;
+  background: url(../img/testimoniales.png) center top no-repeat;
   height: 421px;
   margin-top: 50px;
 }
@@ -162,7 +154,6 @@ ul.menuFooter li a:hover {
 }
 .derechos {
   background-color: #30648e;
-  width: 1900px;
   text-align: center;
 }
 .derechos p {
