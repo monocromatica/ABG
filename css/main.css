@@ -62,7 +62,6 @@ h1 {
 }
 #servicio1 {
   background: url(img/servicio1.png) center top no-repeat;
-  width: 1900px;
   height: 419px;
   padding-top: 60px;
   margin-top: 50px;
@@ -75,7 +74,6 @@ h1 {
 }
 #servicio2 {
   background: url(img/servicio2.jpg) center top no-repeat;
-  width: 1900px;
   height: 276px;
 }
 #servicio2 p {
@@ -83,7 +81,6 @@ h1 {
 }
 #servicio3 {
   background: url(img/servicio3.png) center top no-repeat;
-  width: 1900px;
   height: 419px;
   padding-top: 60px;
 }
@@ -95,7 +92,6 @@ h1 {
 }
 #servicio4 {
   background: url(img/servicio2.jpg) center top no-repeat;
-  width: 1900px;
   height: 276px;
 }
 #servicio4 p {
@@ -103,7 +99,6 @@ h1 {
 }
 #servicio5 {
   background: url(img/servicio5.png) center top no-repeat;
-  width: 1900px;
   height: 419px;
   padding-top: 60px;
 }
@@ -115,7 +110,6 @@ h1 {
 }
 #servicio6 {
   background: url(img/servicio2.jpg) center top no-repeat;
-  width: 1900px;
   height: 276px;
 }
 #servicio6 p {
