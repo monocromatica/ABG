@@ -43,7 +43,8 @@ h1 {
 ------------------------------------ */
 .wallpapered {
   margin: 0;
-  padding-top: 250px;
+  padding-top: 320px;
+  margin-bottom: 40px;
   width: 100%;
   background: #eee center top;
   -webkit-box-shadow: 0px 5px 15px 0px #4a4a4a;
@@ -59,9 +60,6 @@ h1 {
 /* ------------------------------------
 			servicios
 ------------------------------------ */
-#tituloservicio {
-  margin-top: 10px;
-}
 #sliderSer {
   margin-top: 30px;
 }
