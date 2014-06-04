@@ -68,21 +68,14 @@ h1 {
 }
 #servicio1 {
   background: url(img/servicio1.png) center top no-repeat;
-  height: 419px;
-  padding-top: 60px;
+  padding-top: 130px;
   margin-top: 50px;
 }
 #servicio1 p {
-  color: #ffffff;
+  color: #4691ce;
+  text-align: justify;
 }
 #servicio1 h2 {
-  color: #ffffff;
-}
-#servicio2 {
-  background: url(img/servicio2.jpg) center top no-repeat;
-  height: 276px;
-}
-#servicio2 p {
   color: #4691ce;
 }
 #servicio3 {
@@ -120,6 +113,16 @@ h1 {
 }
 #servicio6 p {
   color: #4691ce;
+}
+/* ------------------------------------
+			ventq
+------------------------------------ */
+.imgborder {
+  border: 1px solid #4691ce;
+  margin-top: 20px;
+}
+#titulomateriales {
+  margin-bottom: 15px;
 }
 /* ------------------------------------
 			quotes

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>ABG Estructuras y Techos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+		
+		<link rel='stylesheet' href='css/bootstrap.css'>
+<link rel='stylesheet' href='css/main.css'>
+<link rel='stylesheet' href='css/jquery.fs.wallpaper.css'>
+<link rel='stylesheet' href='css/quovolver.css'>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">Tu navegador es <strong>anticuado.</strong> Por favor <a href="http://browsehappy.com/">actualizalo.</a> para tener una mejor experiencia del sitio.</p>
+        <![endif]-->
+				
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<header>
+			<div class="container">
+				<div class="row">
+					<div id="logo" class="col-md-3">
+						<img src="img/logo.png" alt="ABG Techos y Aislantes" />
+					</div>
+					<div id="menu" class="col-md-9">
+						<ul class="nav nav-pills  pull-right">
+						  <li><a href="index.html">Inicio</a></li>
+						  <li><a href="nosotros.html">Nosotros</a></li>
+						  <li><a href="servicios.html">Servicios</a></li>
+						  <li class='current'><a class='current' href="venta.html">Venta de Lamina</a></li>
+						  <li><a href="galeria.html">Galer&iacute;a</a></li>
+						  <li><a href="contacto.html">Contacto</a></li>
+						</ul>
+					</div>
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</header>
+		
+		<div id="nosHeader" class="wallpapered"></div>
+		<div class="container">
+			<div class="row">
+				<div class="text-center" id="titulomateriales">
+					<h1>Materiales</h1>
+				</div>
+			</div>			
+		</div>	
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4" >
+					<img src="img/acanalada.jpg" class="imgborder">
+				</div>
+				<div class="col-md-8">
+					<h2>Acanalada R-101</h2>
+					<p>Lámina acanalada de acero de configuración trapezoidal esta diseñada para ser utilizada como cubierta de fijación Expuesta. Ideal para Muros, Cubiertas y Faldones de Naves Industriales, Bodegas y Construcciones en General. Tiene excelente relación entre economía y capacidad estructural y capacidad de desagüe. Somos tu mejor opción para Cubiertas y Techos de Lamina Comerciales e Industriales, todo con la calidad Ternium. Techos Ternium - Lamina R-101.</p>
+				</div>
+			</div>
+			<div class="row" >
+				<div class="col-md-4">
+					<img src="img/rn.jpg" class="imgborder">
+				</div>
+				<div class="col-md-8">
+					<h2>RN 100/35</h2>
+					<p>Dirigida a utilizarse en cubiertas de naves industriales donde se requiere resistencia estructural y/o diseñar con pendientes bajas. TRN 100/35 (RN 100) es Ideal ya que cuenta con doble canal antisifon lo cual posee excelentes capacidades de drenaje. Se aplica también en bodegas y fachadas industriales, horizontales y verticales.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 " >
+					<img src="img/losacero.jpg" class="imgborder">
+				</div>
+				<div class="col-md-8">
+					<h2>Losacero</h2>
+					<p>Es una Lamina Acanalada de Acero con perfil acanalado que trabaja de manera conjunta con el concreto para reducir tiempos de construcción, ofrecer economía para el proyecto debido a que ahorra costos mano de obra y equipo, y es un sistema flexible y limpio.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 ">
+					<img src="img/acrilica.jpg" class="imgborder">
+				</div>
+				<div class="col-md-8">
+					<h2>Acrilica</h2>
+					<p>Consiste en un laminado transparente hecho con resina 100% acrílica y reforzada con fibra de vidrio, la cual brinda una gran difusión de luz natural evitando zonas con poca luz y le proporciona una resistencia al impacto superior a otras laminas traslúcidas. Además la Lamina Acrílica contiene una protección Gel Coat la cual incrementa su resistencia a la intemperie y le brinda una garantía de diez años contra el amarillamiento de la flora de fibra de vidrio.
+Son ideales para usarse en naves industriales, centros comerciales, hoteles, invernaderos, centros deportivos. Esto debido a su bajo mantenimiento, su gran paso de luz natural y por su característica de ahorro de energía eléctrica.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 ">
+					<img src="img/laminalisa.jpg" class="imgborder">
+				</div>
+				<div class="col-md-8">
+					<h2>Lamina Lisa</h2>
+					<p>El uso de lamina lisa de acero es de suma importancia en la construcción, industria y el comercio. Con las Hojas Lisas de Acero se pueden hacer flashings, canalones, molduras, goterones, la mayoría de accesorios para completar la construcción. Nuestros expertos te van a asesorar en tus necesidades, para que tu proyecto sea un éxito.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 ">
+					<img src="img/kr18.jpg" class="imgborder">
+				</div>
+				<div class="col-md-8">
+					<h2>Sistema KR-18</h2>
+					<p>Lamina KR-18 (SSR-18) es de cubierta tipo SSR (Standing Seam Roof) acanalado y engargolado en obra. El sistema de Lamina de Acero KR-18 (SSR-18) de fijación oculto a base de clips, disminuye el riesgo de posibles filtraciones ya que no se requiere perforar la lámina para su instalación. La Lamina Engargolada KR-18 (SSR-18) no tiene limitaciones en su longitud ya que es fabricado en una sola pieza de canalón a cumbrera. Permite además la instalación de materiales aislantes. Los techos engargolados pueden ser instalados en cubiertas de baja pendiente hasta 2%.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 ">
+					<img src="img/multypanel.jpg" class="imgborder">
+				</div>
+				<div class="col-md-8">
+					<h2>Multypanel</h2>
+					<p>El Multypanel esta compuesto por lamina metálica calibre 26 en ambas caras y núcleo de espuma de poliuretano, tiene excelente resistencia mecánica y su costo de mantenimiento es bajo.
+El Multytecho es utilizado principalmente en cámaras de refrigeración, casetas o campers, como cubierta en edificios o restaurantes y tiendas de autoservicio, entre otros.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 ">
+					<img src="img/sanmiguel.jpg" class="imgborder">
+				</div>
+				<div class="col-md-8">
+					<h2>Teja San Miguel</h2>
+					<p>Lámina modular de fibrocemento con apariencia de teja tradicional y con cualidades que facilitan su instalación, uso y mantenimiento respecto a otras tejas existentes del mercado.
+</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 ">
+					<img src="img/aislante.jpg" class="imgborder">
+				</div>
+				<div class="col-md-8">
+					<h2>Aislante Termico</h2>
+					<p>Un aislante térmico es un material usado en la construcción y en la industria, caracterizado por su alta resistencia térmica. Establece una barrera al paso del calor entre dos medios que naturalmente tenderían a igualarse en temperatura, impidiendo que el calor traspase los separadores del sistema que interesa (como una vivienda o una nevera) con el ambiente que lo rodea.</p>
+				</div>
+			</div>
+
+		</div>
+		
+
+		
+		
+		
+				
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<footer>
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div id="logo" class="col-md-3 col-md-offset-1">
+							<img src="img/logofooter.png" alt="ABG Techos y Aislantes" />
+						</div>
+						<div id="menu" class="col-md-6 col-md-offset-2">
+							<ul class="menuFooter list-inline">
+							  <li><a href="index.html">Inicio</a></li>
+							  <li><a href="nosotros.html">Nosotros</a></li>
+							  <li><a href="servicios.html">Servicios</a></li>
+							  <li class='current'><a class='current' href="venta.html">Venta de Lamina</a></li>
+							  <li><a href="galeria.html">Galer&iacute;a</a></li>
+							  <li><a href="contacto.html">Contacto</a></li>
+							</ul>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+				<div class="derechos">
+				<div class="container">
+					<div class="row">
+							<div class="col-md-12">
+								<p>Todos los derechos reservados 2014</p>
+							</div>
+						</div><!-- /.row -->
+					</div><!-- /.container -->
+				</div>	
+			</div>	<!-- /.classFooter -->
+			</footer>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+		
+		<script src='js/vendor/bootstrap.min.js'></script>
+<script src='js/main.js'></script>
+<script src='js/headroom.min.js'></script>
+<script src='js/jquery.fs.wallpaper.min.js'></script>
+<script src='js/jquery.quovolver.js'></script>
+		<script type="text/javascript">
+		    $(document).ready(function(){
+		    	$("#nosHeader").wallpaper({
+				    source: "img/materiales.jpg"
+				});
+		    });
+		</script>
+		
+		<script type="text/javascript">
+			  $(document).ready(function() {
+				  $('blockquote').quovolver();
+			  });
+			
+		</script>
+			
+				<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        
+    </body>
+</html>
