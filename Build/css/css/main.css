@@ -27,6 +27,12 @@ h1 {
   color: #ffffff;
   background-color: #4691ce;
 }
+.email {
+  color: white;
+}
+.email:hover {
+  color: #4691ce;
+}
 /* ------------------------------------
 			Index
 ------------------------------------ */
@@ -37,9 +43,6 @@ h1 {
 .boton:hover {
   color: #ffffff;
   text-decoration: none;
-}
-.banner {
-  margin-top: 30px;
 }
 /* ------------------------------------
 			nosotros
@@ -118,9 +121,13 @@ h1 {
   color: #4691ce;
 }
 /* ------------------------------------
-			galeria
+			ventq
 ------------------------------------ */
-#galeria li {
+.imgborder {
+  border: 1px solid #4691ce;
+  margin-top: 20px;
+}
+#titulomateriales {
   margin-bottom: 15px;
 }
 /* ------------------------------------
