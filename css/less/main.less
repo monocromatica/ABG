@@ -30,6 +30,7 @@ h1,h2,h3,h4 {
 	font-family: @signika;
 	font-weight: bold;
 	color: #4691ce;
+
 }
 
 h1 {
@@ -47,14 +48,27 @@ h1 {
 			Index
 ------------------------------------ */
 
+.boton {
+	text-decoration: none;
+	color: #ffffff;
+	
+	&:hover{
+		color: #ffffff;
+		text-decoration: none;		
+	}
+	
+}
+
 
 
 /* ------------------------------------
 			nosotros
 ------------------------------------ */
+
 .wallpapered { 
 	margin: 0; 
-	padding-top: 250px; 
+	padding-top: 320px; 
+	margin-bottom: 40px;
 	width: 100%; 
 	background: #eee center top; 
 	-webkit-box-shadow: 0px 5px 15px 0px #4a4a4a;
@@ -75,9 +89,6 @@ h1 {
 			servicios
 ------------------------------------ */
 
-#tituloservicio {
-	margin-top: 10px;	
-}
 
 #sliderSer{
 	margin-top: 30px;
@@ -87,28 +98,19 @@ h1 {
 }
 #servicio1 {
 	background: url(img/servicio1.png) center top no-repeat;
-	height: 419px;
-	padding-top: 60px;
+	padding-top: 130px;
 	margin-top: 50px;
 	
 	p{
-		color: #ffffff;
+		color:  #4691ce;
+		text-align: justify;
 	}
 	
 	h2{
-		color: #ffffff;
+		color:  #4691ce;
 	}
 }
-#servicio2 {
-	background: url(img/servicio2.jpg) center top no-repeat;
-	height: 276px;
-	
-	p{
-		color: #4691ce;
-	}
 
-	
-}
 #servicio3 {
 	background: url(img/servicio3.png) center top no-repeat;
 	height: 419px;
@@ -150,6 +152,20 @@ h1 {
 
 	
 }
+/* ------------------------------------
+			ventq
+------------------------------------ */
+
+.imgborder{
+	border: 1px solid #4691ce;
+	margin-top: 20px;
+	
+}
+
+#titulomateriales {
+	margin-bottom: 15px;
+}
+
 
 /* ------------------------------------
 			quotes
@@ -167,11 +183,15 @@ h1 {
 
 .footer {
 	background-color: #4691ce;
-	padding-top: 30px;
 	margin-top: 50px;
 	
 	img{
-		margin-top: 20px;
+		margin-top: 30px;
+		padding-bottom: 15px;
+	}
+	
+	li{
+		margin-top: 40px;
 	}
 }
 
@@ -199,4 +219,23 @@ ul.menuFooter {
 	font-size: 12px;
 	color: #ffffff;
 }
+
+
+/* ------------------------------------
+				contacto
+------------------------------------ */
+#contInfo {
+	background: url(../img/contacto.png) no-repeat center top !important;
+	height: 300px;
+	padding-top: 150px;
+	color: white !important;
+	h3{
+		color: white;
+	}
+	p{
+		color: white;
+	}
+}
+
+
 

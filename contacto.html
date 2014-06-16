@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>ABG Techos y Aislantes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+		
+		<!-- @stylesheet bootstrap main jquery.fs.wallpaper quovolver -->
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">Tu navegador es <strong>anticuado.</strong> Por favor <a href="http://browsehappy.com/">actualizalo.</a> para tener una mejor experiencia del sitio.</p>
+        <![endif]-->
+		<!-- @include _header.html -->
+		
+		<div id="nosContacto" class="wallpapered"></div>
+
+		<div class="container">
+			<div class="row">
+				<div id="contInfo">
+					<div class="col-md-4 text-center">
+						<h3>Domicilio</h3>
+						<p>Direcci&oacute;n de prueba #123 <br />Col. de prueba <br /> Zapopan Jalisco <br /> C.P. 45180</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<h3>Tel&eacute;fono</h3>
+						<p>(33) 1234 5678</p>
+						<p>(33) 1234 5678</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<h3>Email</h3>
+						<a href="mailto:contacto@abgconstrucciones.com">contacto@abgconstrucciones.com</a>
+						<a href="mailto:ventas@abgconstrucciones.com">ventas@abgconstrucciones.com</a>
+					</div>
+					<div id="formCont" class="col-md-11 ">
+					    <h2>Formulario de contacto</h2>
+					    <div class="formCont">
+					    	<form role="form" method="post" action="formulario.php" class="pure-form">
+					    		<div class="form-group">
+					    		  	<label for="first_name">Nombre</label>
+					    		    <input type="text" class="form-control testBox" name="first_name" id="first_name" placeholder="Coloca tu nombre" required >
+					    		    <span id="messages"></span>
+					    		  </div>
+					    		  <div class="form-group">
+					    		  	<label for="email">Email</label>
+					    		    <input type="email" class="form-control testBox" name="email" id="email" placeholder="Coloca tu email" required >
+					    		  </div>
+					    		  <div class="form-group">
+					    		  	<label for="telephone">Tel&eacute;fono</label>
+					    		    <input type="text" class="form-control testBox" name="telephone" id="telephone" placeholder="Coloca tu teléfono">
+					    		  </div>
+					    		  <div class="form-group">
+					    		  	<label for="comments">Comentarios</label>
+					    		    <textarea  type="text" class="form-control testBox" name="comments" id="comments" placeholder="Déjanos tu mensaje" rows="5" required ></textarea>
+					    		</div>							
+					    		
+					    		<button type="submit" value="enviar" class="btn btn-primary">enviar <span>&gt;</span></button>						
+					    	</form>
+					    </div>
+					</div><!-- #formCont -->
+				</div><!-- /#contInfo -->
+			</div>		
+		</div>	
+		
+		
+		<div class="quote">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<blockquote>
+								<p>Ut eu consectetur nisi. Praesent facilisis diam nec sapien gravida non mattis justo imperdiet. Vestibulum nisl urna, euismod sit amet congue at, bibendum non risus.</p>
+								<cite>&ndash; Quote Author (Quote #1)</cite>
+							</blockquote>
+						</div>
+					</div>
+				</div>	
+		</div> 
+		
+		
+		
+		<!-- @include _footer.html -->
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+		
+		<!-- @javascript bootstrap.min main headroom.min jquery.fs.wallpaper.min quovolver -->
+		<script type="text/javascript">
+		    $(document).ready(function(){
+		    	$("#nosContacto").wallpaper({
+				    source: "img/contacto.jpg"
+				});
+		    });
+		</script>
+		
+		<script type="text/javascript">
+			  $(document).ready(function() {
+				  $('blockquote').quovolver();
+			  });
+			
+		</script>
+			
+		<!-- @include _analytics.html -->
+        
+    </body>
+</html>
